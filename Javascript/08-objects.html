@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Objects</title>
+</head>
+
+<body>
+ 
+  <script>
+    const product={
+      name:'Tasnova',
+      price:180
+    };
+
+    product.name='Taskia';
+console.log(product);
+
+product.newName='tahia';
+console.log(product);
+
+delete product.newName;
+console.log(product);
+
+console.log(typeof product);
+
+const product2={
+  name:'shirt',
+  'delivery-time':'1-day',
+   rating:{
+    start:5,
+    count:87
+   },
+fun: function f1(){
+  console.log('i am function')
+},
+};
+
+console.log(product2);
+console.log(product2.name);
+console.log(product2['delivery-time']);
+console.log(product2.rating.count);
+
+console.log(typeof console.log);
+console.log(JSON.stringify(product2));
+
+const stringJSON=JSON.stringify(product2);
+
+console.log(JSON.parse(stringJSON));
+
+
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+product2.fun();
+
+
+const obj1={
+  message:'Hello'
+};
+
+const obj2=obj1;
+
+obj1.message='Hi';
+
+console.log(obj1);
+console.log(obj2);
+
+
+const obj4={
+  message:'Good job!',
+  price:799
+};
+
+const{message,price}=obj4;
+
+
+console.log(message);
+console.log(price);
+
+const obj5={
+  message,
+  method:function fun(){
+    console.log('Method')
+  }
+};
+
+obj5.method();
+  </script>
+
+
+</body>
+</html>

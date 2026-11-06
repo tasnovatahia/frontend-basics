@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <title>POsition ex5</title>
+  <style>
+    .close-button{
+      position: absolute;
+      top:-10px;
+      left:-10px;
+    }
+    .button{
+      height: 30px;
+      border-radius: 15px;
+      width: 28px;
+      background-color: black;
+      color: white;
+      border-style: solid;
+    }
+    .div{
+      position: fixed;
+      width: 320px;
+      height: 200px;
+      background-color: grey;
+      bottom:0px;
+      right: 0px;
+    }
+    .timestamp{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: black;
+      color: white;
+      font-size: smaller;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .cloth{
+      position: relative;
+      height: 200px;
+      width: 300px;
+    }
+    .thumb{
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+
+    }
+    .Add{
+      bottom: 0px;
+      display: flex;
+      position: absolute;
+      align-items: center ;
+      width: 200px;
+      background-color: rgba(232, 222, 222, 0.5);
+       height: 50px;
+      justify-content: center;
+      
+      
+    }
+    .percentage{
+      position: absolute;
+      z-index: 200;
+      top: 10px;
+      right: 100px;
+      background-color: rgb(16, 14, 14);
+      font-size: smaller;
+      color: white;
+    }
+  </style>
+</head>
+
+<body style="height: 3000px;">
+
+
+<div class="div">
+<div class="close-button">
+<button class="button">
+  X
+</button>
+
+</div>
+<div class="timestamp">0:29</div>
+</div>
+
+<div class="cloth">
+  <div class="percentage">20% OFF</div>
+  <img  src="thumbnails/last_cat.jpg" class="thumb">
+
+  <div class="Add">
+    <button class="Cart">Add to Cart</button>
+    
+  </div>
+</div>
+</body>

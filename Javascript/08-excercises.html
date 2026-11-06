@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>08-Excercise
+
+  </title>
+</head>
+
+<body>
+ 
+  <script>
+    let Aobj={
+    name:'Basketball',
+    price:2095
+    };
+
+    console.log(Aobj);
+    Aobj.price+=500;
+
+    console.log(Aobj);
+    Aobj['delivery-time']='3 days';
+    console.log(Aobj);
+
+    let product1={
+    name:'Basketball',
+    price:2095
+    };
+
+  let product2={
+     name:'Basketball',
+    price:2095
+    };
+
+
+    function comparePrice(p1,p2){
+      if(p1.price>p2.price){
+       return p2.name;
+      }
+    else if(p1.price<p2.price) {
+        return p1.name;
+    }
+  }
+    console.log(comparePrice(product1,product2));
+
+     function isSameProduct(p1,p2){
+      if((p1.name===p2.name)&&(p1.price===p2.price)){
+       return true;
+      }
+    else {
+        return false;
+    }
+  }
+  console.log(isSameProduct(product1,product2));
+  console.log('HI'.toLowerCase());
+   console.log('HI'.repeat(3));
+  </script>
+
+
+</body>
+</html>

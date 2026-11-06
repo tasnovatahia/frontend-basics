@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Calculator
+
+  </title>
+</head>
+
+<body>
+ <button onclick=" updateCalculation(1)">1</button>
+<button onclick=" updateCalculation(2)">2</button>
+<button onclick=" updateCalculation(3)">3</button>
+<button onclick="console.log(' + ')">+</button>
+
+<button onclick="console.log(`calculation=${calculation};`)">=</button>
+  <script>
+   
+let calculation=JSON.parse(localStorage.getItem('calculation'));
+
+if(calculation===null){
+  calculation=0;
+}
+function updateCalculation(number){
+ calculation+=number;
+
+ localStorage.setItem('calculation',JSON.stringify(calculation));
+ console.log(number);
+
+}
+  </script>
+
+
+</body>
+</html>

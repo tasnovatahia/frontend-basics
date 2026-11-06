@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>coin-flip</title>
+</head>
+
+<body>
+ 
+  <script>
+    
+let guess='heads';
+ let result='';
+
+let pick=Math.random();
+
+if(pick<0.5){
+ result='heads';
+}
+else if(pick>=0.5){
+  result='tails';
+}
+
+
+
+   guess===result?console.log('You win!') :console.log('you lose');
+  </script>
+
+
+</body>
+</html>

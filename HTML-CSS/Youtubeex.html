@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise4</title>
+      <style>
+        .ex{
+           width:200px;
+           border-radius:8px;
+        }
+        .ex2{
+          width:100px;
+          height:100px;
+          object-fit: cover;
+          margin-left: 20px;
+          object-position:center;
+
+        }
+        .ex3{
+          width:100px;
+          height:100px;
+          object-fit: cover;
+          margin-left: 20px;
+          object-position:center;
+          border-radius: 50px;
+        }
+
+        .search{
+          padding-left: 10px;
+          padding-bottom: 10px;
+          padding-top:10px;
+          font-size: 15px;
+          border-radius: 5px;
+          border-style: solid;
+          border-color: rgb(222, 216, 216);
+        }
+        .Google{
+          height: 20px;
+          width:400px;
+          border-radius: 18px;
+          border-style: solid;
+          border-color: rgb(16, 4, 4);
+          box-shadow: 5px 5px 10px rgba(0, 0,0, 0.15);
+          border-color: rgb(216, 209, 209);
+          padding-left: 8px;
+          padding-bottom: 8px;
+          padding-top:8px;
+          
+        }
+        input::placeholder{
+          color: rgb(90, 87, 87);
+        }
+        .e-mail{
+          padding-top: 5px;
+          width:300px;
+          border-color: black;
+          border-style: solid;
+          border-width: 1px;
+          border-radius: 3px;
+        }
+        .Agree{
+          background-color: rgb(64, 64, 180);
+          color: white;
+          width: 300px;
+          text-align:center;
+          height: 10px;
+          padding-top: 12px;
+          padding-bottom: 30px;
+          border-radius: 25px;
+          font-size: 15px;
+        }
+        .By{
+          font-family:"Arial";
+          color: rgb(83, 79, 79);
+          font-size:smaller;
+        }
+
+        .pic{
+          height:50px;
+          width:50px;
+          border-radius: 25px;
+          object-fit: conver;
+          vertical-align: middle;
+        }
+
+        .What{
+          margin-left: 15px;
+          vertical-align:middle;
+          border-color: white;
+          border-style: solid;
+        }
+        .Tweet{
+          margin-left: 15px;
+          height: 30px;
+          width: 60px;
+          border-radius: 15px;
+          background-color: rgb(48, 48, 221);
+          color: white;
+          font-weight: bold;
+          border-color: white;
+          border-style: solid;
+        }
+        .Name,.Mail{
+          display: block;
+        }
+        .Name{
+          margin-bottom: 5px;
+        }
+        .Thanks,.Yes,.No{
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+
+        .Thanks{
+          width: 200px;
+        
+        }
+
+        .G{
+          height:40px;
+          margin-bottom: 0px;
+          margin-left: 100px;
+          padding-bottom: 0px;
+        }
+        .Url{
+          margin-top: 0px;
+          width: 300px;
+          height:20px;
+          border-color: rgb(210, 198, 198);
+          border-radius: 10px;
+          border-style: solid;
+          box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
+          padding-left: 10px ;
+          display: block;
+        }
+
+        .First,.Second{
+        display: inline-block;
+        margin-bottom: 10px;
+        }
+
+        .ail,.Sign{
+          display: block;
+        }
+
+        .ail{
+          margin-bottom: 10px;;
+        }
+
+        .Sign{
+          width: 300px;
+          background-color: rgb(56, 56, 218);
+          color: white;
+          padding-bottom: 30px;
+          height: 10px;
+          padding-top: 10px;
+          border-radius: 10px;
+          font-size: larger;
+          font-weight: bold;
+        }
+        .Ride{
+          font-family: Arial;
+          font-size: 30px;
+          font-weight: 500; 
+        }
+        .Enter,.destination{
+          display: block;
+          background-color:rgb(214, 214, 214);
+          border-color: white;
+          border-style: solid;
+          padding-bottom: 10px;
+          padding-top:10px ;
+          padding-left: 5px;
+          width: 300px;
+          font-weight: 500;
+        }
+
+        .Enter{
+          margin-bottom: 5px;
+        }
+
+        .Request{
+          margin-top:30px;
+          background-color: black;
+          color: white;
+          width: 120px;
+          height: 40px;
+          margin-right: 20px;
+        }
+
+        .Schedule{
+           width: 120px;
+          height: 40px;
+          border-color: white;
+          border-style: none;
+          background-color: rgb(215, 210, 210);
+          font: weight 500px;;
+        }
+
+        .square{
+          background-color: red;
+          height: 100px;
+          width:100px;
+          margin-top: 20px;
+        }
+        .circle{
+          height: 100px;
+          width:100px;
+         background-color: green;
+         border-radius: 50px;
+         margin-top: 20px;
+         margin-left: 10px ;
+        }
+        .Yes{
+          margin-left: 5px;
+        }
+
+        .box{
+          border-color: rgb(167, 159, 159);
+          border-style: solid;
+          width:250px;
+          border-width: 0.5px;
+          margin-top: 10px;
+        }
+
+          .Install{
+            margin-top: 20px;
+            background-color: black;
+            height: 100px;
+          }
+
+        .Youtube{
+          font-family: Arial;
+          font-size: larger;
+          font-weight: bold;
+          color:white;
+          margin-left: 5px;
+          text-align: left;
+          margin-bottom: 0px;
+        }
+        .Add{
+          color: white;
+          margin-left: 5px;
+          text-align: left;
+          color: grey;
+          margin-top:8px;
+          width: 300px;
+        }
+
+        
+        .cat{
+          width: 300px;
+          height: 300px;
+          object-fit: contain;
+        }
+        .cat2{
+          width: 300px;
+          height: 300px;
+          object-fit: contain;
+        }
+        .cat3{
+          width: 150px;
+          height: 300px;
+          object-fit: cover;
+         margin-left: 60px;
+          
+        }
+        .cat4{
+          width: 300px;
+          height: 300px;
+          object-fit: contain;
+        }
+        .Oliver{
+        margin-top: 5px;
+        margin-left: 65px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        }
+        .Mutual{
+         margin-top: 5px;
+        margin-left: 65px;
+        }
+        .Friend{
+          background-color: rgba(89, 89, 230, 0.778);
+          margin-left: 65px;
+          padding-bottom: 5px;
+          padding-top: 5px;
+          color: white;
+          border: none;
+        }
+        .two,.three,.four{
+         display:inline-block;
+         width: 300px;
+
+        }
+      </style>
+  </head>
+<body>
+  <img class="ex" src="thumbnails/thumbnail-2.webp" >
+  <img class="ex2" src="thumbnails/thumbnail-2.webp" >
+  <img class="ex3" src="thumbnails/thumbnail-2.webp" >
+  <input class="search" type="text" placeholder="Search">
+
+  <input class="Google" type="text" placeholder="Search Google or type a URL">
+
+  <p> Email</p>
+  <p>
+    <input class="e-mail">
+  </p>
+  <p class="By">By clicking Agree & Join,you agree to the Privacy Policy</p>
+
+  <button class="Agree">
+    Agree & Join
+  </button>
+  <p>
+  <img class="pic" src="thumbnails/thumbnail-2.webp">
+  <input class="What" placeholder="What's happening">
+  <button class="Tweet">Tweet</button>
+   </p>
+   <input class="Name" type="text" placeholder="Name">
+   <input class="Mail" type="text" placeholder="Email">
+
+   <p class="Thanks">
+    Thanks for chaatting with our customer support.Would you like to take our quick servey?
+   </p>
+
+   <button class="Yes">Yes</button>
+   <button class="No">No</button>
+
+   <p>
+   <img class="G" src="thumbnails/google_logo.svg">
+   </p>
+   <input class="Url" type="text" placeholder="Search Gogle or type a URL">
+
+   <input class="First" type="text" placeholder="First name">
+
+   <input class="Second" type="text" placeholder="First name">
+
+   <input class="ail" type="text" placeholder="Email">
+
+  <button class="Sign"> Sign Up</button>
+
+  <p class="Ride">
+    Request a ride now
+  </p>
+
+  <input class="Enter" type="text"  placeholder="Enter pickup location">
+  <input class="destination" type="text" placeholder="Enter destination">
+
+  <button class="Request"> Request now</button>
+  <button class="Schedule"> Scedule for later</button>
+
+  <div class="square">
+    
+  </div>
+  <div class="circle">
+
+  </div>
+
+  <div class="box">
+    <p>
+      Satisfied with our service?
+    </p>
+
+    <button class="Yes">
+      Yes
+    </button>
+    <button class="No">
+      No
+    </button>
+  </div>
+
+  <div>
+    <button class="Install">
+    <p class="Youtube"> Install YouTube Music</p>
+
+    <p class="Add"> Add YouTube Music to your dekstop for quick and easy access</p>
+     </button>
+
+<div>
+
+ <img class="cat" src="thumbnails/pexels-osmifotografie-35327568.jpg">
+
+ <p class="Oliver">Oliver</p>
+ <p class="Mutual">2 mutual friends</p>
+ <button class="Friend">
+  Add Friend
+ </button>
+  </button>
+</div>
+  
+<div class="two">
+
+ <img class="cat2" src="thumbnails/pexels-osmifotografie-35327568.jpg">
+
+ <p class="Oliver">Oliver</p>
+ <p class="Mutual">2 mutual friends</p>
+ <button class="Friend">
+  Add Friend
+ </button>
+  </button>
+</div>
+  
+<div class="three">
+
+ <img class="cat3" src="thumbnails/orange-cat.jpeg">
+
+ <p class="Oliver">Mimi</p>
+ <p class="Mutual">3 mutual friends</p>
+ <button class="Friend">
+  Add Friend
+ </button>
+  </button>
+</div>
+  
+<div class="four">
+
+ <img class="cat4" src="thumbnails/last_cat.jpg">
+
+ <p class="Oliver">Rex</p>
+ <p class="Mutual">4 mutual friends</p>
+ <button class="Friend">
+  Add Friend
+ </button>
+  </button>
+</div>
+  <div style="display: grid;
+   row-gap:20px;">
+<div style="display: grid;
+              grid-template-columns: 200px 75px;
+              row-gap: 20px;">
+<div style="background-color: lightblue;">200px</div>
+<div style="background-color: pink;">75px</div>
+</div>
+
+
+<div style="display: grid;
+              grid-template-columns: 50px 1fr 75px;width:500px;
+              row-gap:20px">
+<div style="background-color: lightblue;">col 1</div>
+<div style="background-color: pink;">col 2</div>
+<div style="background-color: lightblue">col3</div>
+</div>
+
+<div style="display: grid;
+              grid-template-columns: 50px 50px 50px 50px;
+              row-gap: 20px;column-gap: 10px;
+              height: 200px;width:100%
+              ">
+<div style="background-color: lightblue;">col1</div>
+<div style="background-color: pink;">col2</div>
+
+<div style="background-color: lightblue;">col3</div>
+<div style="background-color: pink;">col4</div>
+</div>
+
+<div style="display: grid;
+              grid-template-columns: 50px 50px 50px 50px;
+               height: 200px;
+              column-gap: 10px;
+              row-gap: 20px;
+              width:100%">
+<div style="background-color: lightblue;">col5</div>
+<div style="background-color: pink;">col6</div>
+
+<div style="background-color: lightblue;">col7</div>
+<div style="background-color: pink;">col8</div>
+</div>
+
+
+<p>12a.</p>
+<div style="display: flex;">
+<div style="background-color: lightblue;width: 200px;">200px</div>
+<div style="background-color: lightpink;width: 75px;">75px</div>
+</div>
+
+<p>
+  12b.
+</p>
+<div style="display: flex;">
+  <div style="background-color: lightblue;width: 50px;">item 1</div>
+  <div style="background-color: lightpink;flex:1 ;">item 2</div>
+  <div style="background-color: lightblue;width: 75px;">item 3</div>
+</div>
+
+
+<div style="display: flex;justify-content: space-between;">
+  <div style="background-color: lightblue;">item 1</div>
+  <div style="background-color: lightpink;">item 2</div>
+  <div style="background-color: lightblue;">item 3</div>
+  <div style="background-color: lightpink;">item 4</div>
+</div>
+
+<div style="display: flex;justify-content: space-between;border-width: 1px;border-color: grey;border-style: solid;align-items: center;height: 50px;">
+  <div style="background-color: lightpink;">item 1</div>
+  <div style="background-color: lightpink;">item 2</div>
+  
+</div>
+
+
+<p>12e.</p>
+
+<div style="height:100px;border-color: grey;border-width: 1px;border-style: solid;width: 320px;justify-content: space-between;">
+  <div style="display: flex;width:300px;justify-content: space-between;padding-left: 5px;">
+    <div style="font-weight: bold;">Home</div>
+     <div class="button-14">
+      <button style="background-color: blue;color: white;height: 20;border-radius: 10px;width: 40px;"> 14</button>
+     </div>
+  </div>
+
+  <div style="display: flex;width:300px;justify-content: space-between;padding-left: 5px;margin-top: 15px;">
+    <div style="font-weight: bold;">Notifications</div>
+     <div class="button-14">
+      <button style="background-color: blue;color: white;height: 20px;border-radius: 10px;width: 30px;"> 3</button>
+     </div>
+  </div>
+  <div style="display: flex;width:300px;justify-content: space-between;padding-left: 5px;margin-top: 15px;">
+    <div style="font-weight: bold;">Messages</div>
+     <div class="button-14">
+      <button style="background-color: blue;color: white;height: 20;border-radius: 10px;width: 30px;"> 5</button>
+     </div>
+  </div>
+</div>
+
+
+
+<p>
+  12g.
+</p>
+
+
+
+<div style="margin-bottom: 20px;">
+
+<div style="display: flex;">
+<div><img  style="width: 50px;height: 50px;object-fit: cover;border-radius:25px;vertical-align: middle;" 
+  src="thumbnails/last_cat.jpg">
+</div>
+<div style="margin-left: 20px;width: 100px;">
+<div style="font-weight: bold;">oliver</div>
+<div style="color: grey;">the cat</div>
+<div  style="color: grey;">Popular</div>
+</div>
+<div style="display: flex;align-items: center;"> 
+  <butto style="background-color: rgb(83, 83, 229);
+  color: white;padding-left: 10px;padding-right: 10px;
+  padding-bottom: 5px;padding-top: 5px;border-radius: 3px;margin-left: 100px;
+  ">Follow</button>
+</div>
+</div>
+</div>
+
+<div style="margin-bottom: 20px;">
+<div style="display: flex;">
+<div><img  style="width: 50px;height: 50px;object-fit: cover;border-radius:25px;" 
+  src="thumbnails/orange-cat.jpeg">
+</div>
+<div style="margin-left: 20px;width: 100px;" >
+<div style="font-weight: bold;">Mimi</div>
+<div style="color: grey;">Sleepy Cat</div>
+<div  style="color: grey;">Popular</div>
+</div>
+<div style="display: flex;align-items: center;"> 
+  <butto style="background-color: rgb(83, 83, 229);
+  color: white;padding-left: 10px;padding-right: 10px;
+  padding-bottom: 5px;padding-top: 5px;border-radius: 3px;margin-left: 100px;
+  ">Follow</button>
+</div>
+</div>
+</div>
+
+<div style="display: flex;">
+<div><img  style="width: 50px;height: 50px;object-fit: cover;border-radius:25px;" 
+  src="thumbnails/MOmeow1_square.avif">
+</div>
+<div style="margin-left: 20px;width: 100px;">
+<div style="font-weight: bold;">Rex</div>
+<div style="color: grey;">Happy Buildog</div>
+<div  style="color: grey;">Popular</div>
+</div>
+<div style="display: flex;align-items: center;"> 
+  <butto style="background-color: rgb(83, 83, 229);
+  color: white;padding-left: 10px;padding-right: 10px;
+  padding-bottom: 5px;padding-top: 5px;border-radius: 3px;margin-left: 100px;
+  ">Follow</button>
+</div>
+</div>
+</div>
+
+
+<div style="display: flex;background-color: rgb(125, 22, 177);width: 600px;color:white;height: 30px;align-items: center;">
+
+  <div style="width: 100px;">Home</div>
+  <div >
+  <div style="height: 20px;border-radius: 10px;" ><input type="text" placeholder="Search" style="height: 18;border-radius: 9px;width: 300px ;margin-right: 100px;"></div>
+  </div>
+  <div">
+    <button style="width: 80px;border-color: white;border-width: 1px;background-color: rgb(125, 22, 177);color: white;">Download</button>
+  </div>
+</div>
+
+<p>13a</p>
+<div style="display: flex;">
+  <div style="background-color: lightpink;
+  width:75px;height: 50px;display: flex;align-items: center;padding-left: 25px;
+  "><button style="background-color: black;color: white;padding-bottom: 1px;padding-top: 1px;"> item 1</button> </div>
+   <div style="background-color: lightblue;
+   width:200px;height: 50px;"></div>
+</div>
+<style>
+  .outer-flex{
+    display: flex;
+    height: 50px;
+  }
+
+.first-section{
+  display: flex;
+  background-color: lightpink;
+  color: lightpink;
+  width: 100px;
+}
+
+.second-section{
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  width: 200px;
+}
+.row2{
+  display: flex;
+  justify-content: space-between ;
+}
+.firstr1{
+  display: flex;
+  background-color: black;
+  color:white
+}
+
+.firstr2{
+  display: flex;
+  background-color: black;
+  color:white
+}
+</style>
+<p>13b.</p>
+
+<div class="outer-flex">
+  <div class="first-section">flex1</div>
+  <div class="second-section">
+    <div class="row1">row1</div>
+    <div class="row2">
+      <div class="firstr1">row2</div>
+      <div class="firstr2">row2</div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+ .full-flex{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  font-family: Arial;
+  height: 70px;
+  margin-left: 10px;
+ }
+.r1{
+  font-size: 12px;
+  color: rgb(121, 120, 120);
+  margin-bottom: 20px;
+}
+
+.r2{
+  display: flex;
+  flex-direction: row;
+
+}
+.col1{
+  height:50px;
+}
+.imcat{
+  height: 40px;
+  width:40px;
+  border-radius: 20px;
+}
+.col2{
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  margin-left: 10px;
+}
+
+.row1{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.Promotions{
+  display: flex;
+  font-family: Arial;
+  font-weight: bold;
+}
+.time{
+  font-size: smaller;
+  color: grey;
+  
+}
+.row2{
+  font-size: smaller;
+  font-weight: bold;
+  margin-bottom: 3px;
+  margin-top: 0px;
+}
+.row3{
+  font-size: smaller;
+  color: rgb(125, 119, 119);
+  margin-bottom: 3px;
+}
+.e{
+display: flex;
+flex-direction: column;
+
+}
+</style>
+
+<p>13c.</p>
+
+
+<div class="full-flex">
+  <div>All Inboxes</div>
+  <div class="r2">
+    <div class="col1">
+     <img class="imcat" src="thumbnails/last_cat.jpg">
+    </div>
+    <div class="col2">
+    <div class="row1">
+      <div class="Promotions"> Chewy Promotions</div>
+      <div class="time">4:58 PM</div>
+      </div>
+    <div class="row2">Biggest sales of the year</div>
+    <div class="row3">Hey there! We're writing to tell you about our...</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<p>
+  13e.
+</p>
+<div class="e">
+  <div class="r1">ALL INBOXES</div>
+<div class="full-flex">
+  
+  <div class="r2">
+    <div class="col1">
+     <img class="imcat" src="thumbnails/last_cat.jpg">
+    </div>
+    <div class="col2">
+    <div class="row1">
+      <div class="Promotions"> Chewy Promotions</div>
+      <div class="time">4:58 PM</div>
+      </div>
+    <div class="row2">Biggest sales of the year</div>
+    <div class="row3">Hey there! We're writing to tell you about our...</div>
+    </div>
+    </div>
+</div>
+
+
+<div class="full-flex">
+  
+  <div class="r2">
+    <div class="col1">
+     <img class="imcat" src="thumbnails/MOmeow1_square.avif">
+    </div>
+    <div class="col2">
+    <div class="row1">
+      <div class="Promotions"> Best Buy</div>
+      <div class="time">12:32PM</div>
+      </div>
+    <div class="row2">Your Best Buy eRecipt</div>
+    <div class="row3">Thank you for shopping at Best Buy,here is...</div>
+    </div>
+    </div>
+  </div>
+
+
+<div class="full-flex">
+  
+  <div class="r2">
+    <div class="col1">
+     <img class="imcat" src="thumbnails/orange-cat.jpeg">
+    </div>
+    <div class="col2">
+    <div class="row1">
+      <div class="Promotions">Netflix</div>
+      <div class="time">9:00 PM</div>
+      </div>
+    <div class="row2">Here's what's cming soon to Netflix</div>
+    <div class="row3">Brand new movies and shows,old favorites...</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<style>
+.f-full-flex{
+  display: flex;
+  flex-direction: row;
+
+  
+}
+.column-1{
+  
+  width: 50px;
+  
+
+}
+.meow{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 20px;
+  
+}
+.column-2{
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+} 
+.roww1{
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.roww2{
+  width:350px;
+  margin-top: 3px;
+}
+.supersimple{
+  color: grey;
+  font-weight: 400;
+}
+.roww3{
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+ border-radius:10px;
+  width:400px;
+  border: 2px solid rgb(192, 192, 192);
+  margin-top: 20px;
+}
+.column-3{
+  background-color: rgb(194, 187, 187);
+   width:100px;      
+  height: 70px;
+   
+  color:rgb(194, 187, 187) ;
+  
+}
+.column-3{
+  display: flex;
+  flex-direction: column;
+}
+.column-4{
+  margin-left: 10px;
+}
+.roww4{
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.youtube{
+  color: grey;
+}
+
+.roww5{
+  font-weight: 500;
+  font-family: Arial;
+  font-size: 15px;
+  width: 200px
+}
+</style>
+
+<p>13f.</p>
+
+<div class="f-full-flex">
+
+  <div class="column-1">
+    <div class="iammeow">
+      <img src="thumbnails/orange-cat.jpeg" class="meow">
+    </div>
+  </div>
+  
+
+  <div class="column-2">
+    <div class="roww1">Supersimple.dev<span class="supersimple">@SuperSimpleDev</span>  </div>
+
+    <div class="roww2">What is backend web development? A complete overview.New video is up!</div>
+
+
+  <div class="roww3" >
+    <div class="column-3">t</div>
+    <div class="column-4">
+      <div class="roww4">
+
+        <div class="youtube"> youtube.com</div>
+      <div class="roww5">Backend web development-a complete overview(2021)</div>
+      </div>
+       
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+

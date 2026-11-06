@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Functions</title>
+</head>
+
+<body>
+ 
+  <script>
+    function function1(){
+    
+      console.log('hello');
+      console.log(2+2);
+    }
+    
+   function1();
+
+   
+  function greet(name){
+    if(name){
+      console.log(`Hello ${name}`);
+    }
+
+    if(!name){
+      console.log('Hey there!');
+    }
+  }
+
+  function convertToFarenheit(celcius){
+    Farenheit=(celcius*9/5)+32;
+
+    console.log(`${Farenheit}F`);
+  }
+
+  function convertToCelsius(Fahrenheit){
+    Celsius=(Fahrenheit-32)*5/9;
+
+    console.log(`${Celsius}C`);
+  }
+
+  function convertLength(length,from,to){
+
+   if(from==='miles' && to==='km'){
+      ans=length*1.6;
+       console.log(`${ans}${to}`);
+    }
+
+   else if(from==='km' && to==='miles'){
+      ans=length/1.6;
+       console.log(`${ans}${to}`);
+    }
+
+   else if(from==='km' && to==='km'){
+      ans=length;
+       console.log(`${ans}${to}`);
+    }
+   else  if(from==='miles' && to==='ft'){
+      ans=length*5280;
+       console.log(`${ans}${to}`);
+    }
+    else if(from==='km' && to==='ft'){
+      ans=length*3281;
+      console.log(`${ans}${to}`);
+    }
+    else if((from!==('km'||'miles'||'ft')) &&(to!==('km'||'miles'||'ft'))){
+      console.log(`Invalid unit:${to}`)
+    }
+
+   
+  }
+convertToFarenheit(25);
+convertToCelsius(86);
+
+convertLength(50,'miles','km');
+convertLength(32,'km','miles');
+convertLength(50,'km','km');
+convertLength(5,'miles','km');
+convertLength(5,'miles','ft');
+convertLength(5,'km','ft');
+convertLength(5,'lbs','lbs');
+convertLength(5,'pound','pound');
+
+
+  </script>
+
+
+</body>
+</html>
